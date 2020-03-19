@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>order-FOOD</title>
+    <title>Login-form</title>
 </head>
 <body>
-    <form class="col-md-4" method="POST" action="/order/orderFood">
+    <h4>REGISTRATION FORM</h4>
+    <form class="col-md-4" method="GET" action="/order">
         <div class="form-group">
-          <label for="exampleInputEmail1">food</label>
-          <input type="text" class="form-control" name="food" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1">User Name</label>
+          <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Sauce</label>
-          <input type="text" class="form-control" name="sauce" id="exampleInputPassword1">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" name="password" id="exampleInputPassword1">
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Drink</label>
-            <input type="text" class="form-control" name="drink" id="exampleInputPassword1">
-          </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
-        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="submit" class="btn btn-primary">Login</button>
       </form>
 </body>
 </html>
