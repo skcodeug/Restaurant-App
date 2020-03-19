@@ -10,9 +10,11 @@ router.get('/', (req,res)=>{
     res.sendFile( path.join(__dirname, '../views','orderFood.html'))
 });
 
-router.get('/orderReport', (req,res)=>{
+router.get('/orderReport', async (req,res)=>{
     // console.log("hello world");
-    res.render('orderReport');
+    let entries = await Order.find();
+    res.render('orderReport', { orders: entries });
+    // res.render('userlist', { users: items })
 });
 
 router.post('/', (req,res)=>{
